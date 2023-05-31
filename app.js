@@ -9,6 +9,10 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'views/index.html'))
 })
 
+app.get('/', function (req, res) {
+  res.sendFile(path.join(__dirname, 'views/login.html'))
+})
+
 app.listen(PORT, () => {
   console.log('http://localhost:'+PORT);
 });
